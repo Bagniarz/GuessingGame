@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         // Primitives Data Types
         boolean userWin = false;
         int userNumber;
@@ -66,8 +66,8 @@ public class Main {
             // Game core
             for (; ; ) { // Loop to generate random number
                 //System.out.println("Game Core");
-                GenNumber game = new GenNumber();
-                Number nr = game.generateNumber(difficulty.getGenNumRange());
+                Number randomNumber = new Number();
+                Number nr = randomNumber.generateNumber(difficulty.getGenNumRange());
 
 
                 for (int i = 0; i <= difficulty.getAmountOfTries(); i++) { // loop for user to guess a number based on difficulty
@@ -108,6 +108,6 @@ public class Main {
                 }
             }
         }
-    }
+    }*/
 }
 
