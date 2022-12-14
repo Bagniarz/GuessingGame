@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class Main {
+public class OldMain {
     /*public static void main(String[] args) {
         // Primitives Data Types
         boolean userWin = false;
@@ -13,16 +11,16 @@ public class Main {
         diffAgain:
         for ( ; ; ) { // Main loop to start up game
 
-            // Difficulty setting
+            // Settings.DifficultySettings.Difficulty setting
             System.out.println("""
-                    Choose Difficulty:\s
+                    Choose Settings.DifficultySettings.Difficulty:\s
                     Hard
                     Normal
                     Easy
                     Custom
                     Or type quit to close program""");
 
-            Difficulty difficulty = new Difficulty();
+            Settings.DifficultySettings.Difficulty difficulty = new Settings.DifficultySettings.Difficulty();
             String userInput = input.nextLine().toLowerCase();
             if (userInput.equalsIgnoreCase("quit")) break;
 
@@ -60,14 +58,14 @@ public class Main {
                     System.err.println("Wrong Input! Please use correct names of difficulties");
                     continue;
             }
-            //System.out.println("End Of Difficulty Setting");
+            //System.out.println("End Of Settings.DifficultySettings.Difficulty Setting");
 
 
             // Game core
             for (; ; ) { // Loop to generate random number
                 //System.out.println("Game Core");
-                Number randomNumber = new Number();
-                Number nr = randomNumber.generateNumber(difficulty.getGenNumRange());
+                Game.Core.Number.Number randomNumber = new Game.Core.Number.Number();
+                Game.Core.Number.Number nr = randomNumber.generateNumber(difficulty.getGenNumRange());
 
 
                 for (int i = 0; i <= difficulty.getAmountOfTries(); i++) { // loop for user to guess a number based on difficulty
