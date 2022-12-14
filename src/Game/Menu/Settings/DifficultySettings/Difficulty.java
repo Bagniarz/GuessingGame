@@ -3,14 +3,13 @@ package Game.Menu.Settings.DifficultySettings;
 import User.UserInput;
 
 public class Difficulty extends DifficultySettings {
-    private String input;
 
     public Difficulty() {}
 
     public DifficultySettings setDifficulty(String input) {
-        this.input = input.toLowerCase();
+        String result = input.toLowerCase();
         DifficultySettings d = new DifficultySettings();
-        switch (input) {
+        switch (result) {
             case "easy":
                 d.setChances(20);
                 d.setRandomNumberRange(50);
