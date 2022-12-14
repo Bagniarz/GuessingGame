@@ -1,4 +1,4 @@
-package User;
+package Game.User;
 
 import java.util.Scanner;
 public class UserInput {

@@ -1,14 +1,17 @@
 package Game.Menu.Settings.DifficultySettings;
 
-import User.UserInput;
+import Game.User.UserInput;
 
 public class Difficulty extends DifficultySettings {
-
+    public Difficulty(int chances, int range) {
+        this.chances = chances;
+        this.randomNumberRange = range;
+    }
     public Difficulty() {}
 
-    public DifficultySettings setDifficulty(String input) {
+    public Difficulty setDifficulty(String input) {
         String result = input.toLowerCase();
-        DifficultySettings d = new DifficultySettings();
+        Difficulty d = new Difficulty();
         switch (result) {
             case "easy":
                 d.setChances(20);
@@ -36,6 +39,18 @@ public class Difficulty extends DifficultySettings {
                     d.setRandomNumberRange(50);
                 }
         }
+        System.out.println(d + " = setDifficulty()");
         return d;
+    }
+
+
+
+
+    @Override
+    public String toString() {
+        return "Difficulty{" +
+                "randomNumberRange=" + randomNumberRange +
+                ", chances=" + chances +
+                '}';
     }
 }
