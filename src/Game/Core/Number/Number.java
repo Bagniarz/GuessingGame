@@ -6,7 +6,7 @@ public class Number {
 
     private int number2;
 
-    protected short randomNumberRange;
+    protected int range;
 
     Number(int number, int number2) {
         this.number = number;

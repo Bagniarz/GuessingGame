@@ -2,11 +2,10 @@ package Game.Core;
 
 import Game.Menu.MainMenu;
 
-public class NewMain {
+public class Main {
     public static void main(String[] args) {
-
+        System.out.println(" Hello! You are playing GuessNumber :) ");
         MainMenu m = new MainMenu();
-        // for ( ; ; ) { // Main Game.Menu
-            m.menu();
+        m.menu();
     }
 }
