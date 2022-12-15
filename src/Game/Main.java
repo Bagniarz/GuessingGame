@@ -1,4 +1,4 @@
-package Game.Core;
+package Game;
 
 import Game.Menu.MainMenu;
 

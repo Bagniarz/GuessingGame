@@ -6,28 +6,6 @@ import Game.Menu.Settings.DifficultySettings.DifficultySettings;
 import Game.User.UserInput;
 
 public class MainMenu {
-    private int range, chances;
-    public int getRange() {
-        return range;
-    }
-
-    public void setRange(int range) {
-        this.range = range;
-    }
-
-    public int getChances() {
-        return chances;
-    }
-
-    public void setChances(int chances) {
-        this.chances = chances;
-    }
-
-    public MainMenu(int range, int chances) {
-        this.range = range;
-        this.chances = chances;
-    }
-
     public MainMenu() {}
 
     public void displayMenu() {
@@ -47,12 +25,8 @@ public class MainMenu {
                 case "start":
                     if (d.getChances() == 0 && d.getRandomNumberRange() == 0) {
                         m.startGame(50, 10);
-                        //System.out.println("RangeD: " + d.getRandomNumberRange());
-                        //System.out.println("ChancesD: " + d.getChances());
                     } else {
                         m.startGame(d.getRandomNumberRange(), d.getChances());
-                        //System.out.println("Range: " + d.getRandomNumberRange());
-                        //System.out.println("Chances: " + d.getChances());
                     }
                     break;
                 case "d":

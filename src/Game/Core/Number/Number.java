@@ -1,34 +1,13 @@
 package Game.Core.Number;
 
 public class Number {
-
-    private int number;
-
-    private int number2;
-
     protected int range;
 
-    Number(int number, int number2) {
-        this.number = number;
-        this.number2 = number2;
-    }
+    public Number() {}
 
-    public Number() {
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public int getUserInput() {
-        return number2;
-    }
-
-    public void setUserInput(int number2) {
-        this.number2 = number2;
+    public int generateNumber(int randomNumberRange) { // Method to generate random number based on difficulty setting
+        this.range = randomNumberRange;
+        int randomNumber = (int) Math.floor(Math.random() * randomNumberRange);
+        return randomNumber;
     }
 }

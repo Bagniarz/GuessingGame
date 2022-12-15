@@ -39,12 +39,8 @@ public class Difficulty extends DifficultySettings {
                     d.setRandomNumberRange(50);
                 }
         }
-        System.out.println(d + " = setDifficulty()");
         return d;
     }
-
-
-
 
     @Override
     public String toString() {

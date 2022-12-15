@@ -45,7 +45,6 @@ public class DifficultySettings {
                 d = d.setDifficulty("custom");
                 break;
         }
-        System.out.println(d + " = difficultySettings()");
         return d;
     }
 }
