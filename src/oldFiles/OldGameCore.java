@@ -1,30 +1,23 @@
-package Game.Core;
+package oldFiles;
 
-import Game.Core.Number.Number;
-import Game.User.UserInput;
+public class OldGameCore {
+    public OldGameCore() {}
 
-public class GameCore {
-    public GameCore() {}
-
+/*
     public static String compare(int randomNumber, int input, int chances, int tries) {
-        String result = "";
         if (randomNumber == input) {
-            result = "You guessed right! Congratulations :)";
-        } else if (tries == chances && randomNumber != input) {
-            result = "Sorry you didn't guessed! Correct answer was " + randomNumber;
+            return "You guessed right! Congratulations :)";
+        } else if (tries == chances) {
+            return "Sorry you didn't guessed! Correct answer was " + randomNumber;
         } else if (randomNumber > input) {
-            result = "Aim Higher!";
-        } else if (randomNumber < input){
-            result = "Aim Lower!";
+            return "Aim Higher!";
+        } else {
+            return "Aim Lower!";
         }
-        return result;
     }
-
-    public void Game(int range, int chances) {
+    public void game(int range, int chances) {
         boolean endGame = false;
         while (!endGame) {
-            Number random = new Number();
-            int randomNumber = random.generateNumber(range);
             System.out.println("You have " + chances + " chances in total" + " and maximum generated number is " + range);
 
                 for (int tries = 1; tries <= chances; tries++) {
@@ -46,5 +39,5 @@ public class GameCore {
                 endGame = true;
             }
         }
-    }
+    } */
 }

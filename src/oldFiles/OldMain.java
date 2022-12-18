@@ -1,3 +1,5 @@
+package oldFiles;
+
 public class OldMain {
     /*public static void main(String[] args) {
         // Primitives Data Types
