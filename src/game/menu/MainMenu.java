@@ -22,7 +22,6 @@ public class MainMenu {
         }
     }
     public static boolean playAgain(String input) {
-        System.out.println("Do you wanna play again?");
         if (input.equalsIgnoreCase("y") || input.equalsIgnoreCase("Yes")) {
             return true;
         } else {
@@ -54,6 +53,7 @@ public class MainMenu {
                 }
                 printRemainingChances(game.getChancesLeft());
             }
+            System.out.println("Do you wanna play again?");
             if (!playAgain(UserInput.askUserString())) {
                 break;
             }
